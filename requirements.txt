@@ -1,0 +1,9 @@
+streamlit==1.55.0
+pypdf==6.9.2
+python-dotenv==1.2.2
+langchain==1.2.13
+langchain-openai==1.1.12
+langchain-community==0.4.1
+langchain-core==1.2.22
+openai==2.30.0
+st-copy-to_clipboard==0.1.6
