@@ -23,7 +23,7 @@ llm = ChatOpenAI(
 # 진짜 레전드인게 Hot Reloading 기능으로 Streamlit은 내부적으로 파일 시스템의 변화를 감시함 그래서 해당 코드 저장시 열려있던 세션에 바로 반영됨.
 st.set_page_config(page_title="Paper-Insight Agent", page_icon="📄", layout="wide")
 
-#평소에 논문 읽을때 불편했던 점들을 해결하기 위함.
+# 평소에 논문 읽을때 불편했던 점들을 해결하기 위함.
 st.title("📄 Paper-Agent")
 st.markdown("### 분석할 논문을 알려주세요")
 tab1, tab2 = st.tabs(["논문 제목으로 찾기", "PDF 파일 업로드"])
@@ -33,7 +33,7 @@ source_name = ""
 # URL에서 검색어 가져오기
 query_params = st.query_params
 search_query = query_params.get("search", "")
-# 
+
 if search_query:
     st.session_state.auto_run = True
     input_content = f"논문 제목: {search_query}"
